@@ -1,0 +1,82 @@
+"search_1": {
+      "signature": "Signature keyId=\"staging-ondc.creditcentral.in|c9861448-cd62-4f25-996b-4222bbeaff90|ed25519\",algorithm=\"ed25519\",created=\"1725274604\",expires=\"1725447404\",headers=\"(created) (expires) digest\",signature=\"/PAyfUVeIlnT+1eptyXame9QKmJUOiT/A5AwbA013DhDueyjL/XKkclas92CPe9RsnoxWGaQFDemLHq/2z39Aw==\"",
+      "context": {
+        "domain": "ONDC:FIS12",
+        "location": {
+          "country": {
+            "code": "IND"
+          },
+          "city": {
+            "code": "*"
+          }
+        },
+        "transaction_id": "7175a87d-3657-4d49-bcaf-3a59057b7e7d",
+        "message_id": "19e4b320-0b6e-4245-bab1-4db114999832",
+        "action": "search",
+        "timestamp": "2024-09-02T16:26:44.617Z",
+        "version": "2.0.0",
+        "bap_uri": "https://staging-ondc.creditcentral.in/",
+        "bap_id": "staging-ondc.creditcentral.in",
+        "ttl": "PT10M"
+      },
+      "message": {
+        "intent": {
+          "category": {
+            "descriptor": {
+              "code": "PERSONAL_LOAN"
+            }
+          },
+          "payment": {
+            "collected_by": "BAP",
+            "tags": [
+              {
+                "descriptor": {
+                  "code": "BUYER_FINDER_FEES"
+                },
+                "display": false,
+                "list": [
+                  {
+                    "descriptor": {
+                      "code": "BUYER_FINDER_FEES_TYPE"
+                    },
+                    "value": "percent-annualized"
+                  },
+                  {
+                    "descriptor": {
+                      "code": "BUYER_FINDER_FEES_PERCENTAGE"
+                    },
+                    "value": "1"
+                  }
+                ]
+              },
+              {
+                "descriptor": {
+                  "code": "SETTLEMENT_TERMS"
+                },
+                "display": false,
+                "list": [
+                  {
+                    "descriptor": {
+                      "code": "DELAY_INTEREST"
+                    },
+                    "value": "2.5"
+                  },
+                  {
+                    "descriptor": {
+                      "code": "STATIC_TERMS"
+                    },
+                    "value": "https://bap.credit.becknprotocol.io/personal-banking/loans/personal-loan"
+                  },
+                  {
+                    "descriptor": {
+                      "code": "OFFLINE_CONTRACT"
+                    },
+                    "value": "true"
+                  }
+                ]
+              }
+            ]
+          }
+        }
+      }
+    },
